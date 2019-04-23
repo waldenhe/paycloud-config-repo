@@ -2,12 +2,12 @@ zipkin:
   collector:
     rabbitmq:
       addresses: paycloud-mq-rabbit:5672
+      password: '{cipher}AQBu0emZof9+JS/Awbk9uVOlkfkJQ7iZADezEm3+u/VDK/2alvpZoBPSP95DCykciuetOvdQCjZaeRAr5EjSFHB+I6oMF8STs+rCJXVc5KNUD9Bw9DJ/2aqSLWdDx1vahcdgr0cRhaMHu/cTO/PAcqHC26lgZUg6R2Wh3UgpGKEhxHOZpL11dWbHFU954tPaMfwXW9HNRSVUHtP58dZ4KAMXBxl01QcpofViv9Cee3S5cf9e5SRfrk90ml+3poX4L8oWyLWESgtFL1kxpJpeVp+nnf2kN7Ts0wOiUtr1tOn27vov4SVPMoJdsSfV06kuuvIVhtlahsyBSV+QXUGbxZm5K2V01LjQyft2hbqlGdWcyhdvusCEFDiH3Aq0a5OA8fU='
       username: guest
-      password: guest
       queue: zipkin
 
 spring:
   rabbitmq:
       address: paycloud-mq-rabbit:5672
-      password: guest
+      password: '{cipher}AQBu0emZof9+JS/Awbk9uVOlkfkJQ7iZADezEm3+u/VDK/2alvpZoBPSP95DCykciuetOvdQCjZaeRAr5EjSFHB+I6oMF8STs+rCJXVc5KNUD9Bw9DJ/2aqSLWdDx1vahcdgr0cRhaMHu/cTO/PAcqHC26lgZUg6R2Wh3UgpGKEhxHOZpL11dWbHFU954tPaMfwXW9HNRSVUHtP58dZ4KAMXBxl01QcpofViv9Cee3S5cf9e5SRfrk90ml+3poX4L8oWyLWESgtFL1kxpJpeVp+nnf2kN7Ts0wOiUtr1tOn27vov4SVPMoJdsSfV06kuuvIVhtlahsyBSV+QXUGbxZm5K2V01LjQyft2hbqlGdWcyhdvusCEFDiH3Aq0a5OA8fU='
       username: guest
