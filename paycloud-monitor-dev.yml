@@ -11,7 +11,10 @@ spring:
       address: paycloud-mq-rabbit:5672
       password: guest
       username: guest
-      
+  zipkin:
+    locator:
+      discovery:
+        enabled: true      
 turbine:
   app-config: paycloud-gateway #收集监控信息的服务名
   combine-host-port: true

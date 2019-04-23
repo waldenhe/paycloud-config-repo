@@ -12,3 +12,7 @@ spring:
       address: paycloud-mq-rabbit:5672
       password: guest
       username: guest
+  zipkin:
+    locator:
+      discovery:
+        enabled: true      
