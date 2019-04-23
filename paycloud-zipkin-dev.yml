@@ -5,3 +5,9 @@ zipkin:
       username: guest
       password: guest
       queue: zipkin
+
+spring:
+    rabbitmq:
+        address: paycloud-mq-rabbit:5672
+        password: guest
+        username: guest
