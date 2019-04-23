@@ -15,4 +15,10 @@ spring:
   zipkin:
     locator:
       discovery:
-        enabled: true      
+        enabled: true
+  cloud:
+      gateway:
+          discovery:
+              locator:
+                  enabled: true
+                  lower-case-service-id: true              
