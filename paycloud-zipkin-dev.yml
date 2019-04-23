@@ -1,0 +1,7 @@
+zipkin:
+  collector:
+    rabbitmq:
+      addresses: paycloud-mq-rabbit:5672
+      username: guest
+      password: guest
+      queue: zipkin
