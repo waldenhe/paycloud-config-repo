@@ -14,7 +14,10 @@ spring:
   zipkin:
     locator:
       discovery:
-        enabled: true      
+        enabled: true
+  sleuth:
+    sampler:
+      probability: 1.0              
 turbine:
   app-config: paycloud-gateway #收集监控信息的服务名
   combine-host-port: true

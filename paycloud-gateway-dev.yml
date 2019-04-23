@@ -16,6 +16,9 @@ spring:
     locator:
       discovery:
         enabled: true
+  sleuth:
+    sampler:
+      probability: 1.0        
   cloud:
       gateway:
           discovery:
