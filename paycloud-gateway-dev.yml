@@ -8,3 +8,7 @@ spring:
       enabled: true
       max-request-size: 50MB
       max-file-size: 50MB
+  rabbitmq:
+      address: paycloud-mq-rabbit:5672
+      password: guest
+      username: guest
