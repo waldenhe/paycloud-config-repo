@@ -24,4 +24,29 @@ spring:
           discovery:
               locator:
                   enabled: true
-                  lower-case-service-id: true              
+                  lower-case-service-id: true
+          routes:
+          - id:
+              zipbin-route
+            uri:
+              http://localhost:8003/
+            predicates:
+              - After=2017-01-20T17:42:47.789-07:00[America/Denver]
+          - id:
+                uac
+            uri: lb://paycloud-oauth2-server
+            predicates:
+              - Path=/oauth/**,/user
+            filters:
+              - TokenRelay= 
+security:
+  oauth2:
+    client:
+      clientId: paycloud-gateway
+      clientSecret: paycloudGateWaySecret
+      access-token-uri: http://paycloud-gateway:8004/uac/oauth/token
+      user-authorization-uri: http://paycloud-gateway:8004/uac/oauth/authorize
+    resource:
+      user-info-uri: http://paycloud-gateway:8004/uac/user
+      prefer-token-info: false
+
