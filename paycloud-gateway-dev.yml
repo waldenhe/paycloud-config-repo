@@ -53,7 +53,7 @@ spring:
             client-id: paycloud-gateway
             client-secret: test
             authorization-grant-type: authorization_code
-            redirectUri: "{baseUrl}/login/oauth2/code/{registrationId}"
+            redirectUri: "{baseUrl}"
             scope: openid,profile,email,resource.read
         provider:
           uac:
