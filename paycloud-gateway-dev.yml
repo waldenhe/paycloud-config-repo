@@ -24,21 +24,7 @@ spring:
           discovery:
               locator:
                   enabled: true
-                  lower-case-service-id: true
-          routes:
-          - id:
-              zipbin-route
-            uri:
-              http://localhost:8003/
-            predicates:
-              - After=2017-01-20T17:42:47.789-07:00[America/Denver]
-          - id:
-                uac
-            uri: lb://paycloud-oauth2-server
-            predicates:
-              - Path=/uac/**
-            filters:
-              - TokenRelay= 
+                  lower-case-service-id: true 
   autoconfigure:
     # TODO: remove when fixed https://github.com/spring-projects/spring-security/issues/6314
     exclude: org.springframework.boot.actuate.autoconfigure.security.reactive.ReactiveManagementWebSecurityAutoConfiguration
