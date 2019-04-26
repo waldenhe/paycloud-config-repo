@@ -57,9 +57,9 @@ spring:
             scope: openid,profile,email,resource.read
         provider:
           uac:
-            authorization-uri: http://localhost:8007/uac/oauth/authorize
-            token-uri: http://localhost:8007/uac/oauth/token
-            user-info-uri: http://localhost:8007/uac/userinfo
+            authorization-uri: http://paycloud-gateway:8004/uac/oauth/authorize
+            token-uri: http://paycloud-gateway:8004/uac/oauth/token
+            user-info-uri: http://paycloud-gateway:8004/uac/userinfo
             user-name-attribute: sub
-            jwk-set-uri: http://localhost:8007/uac/token_keys
+            jwk-set-uri: http://paycloud-gateway:8004/uac/token_keys
 
