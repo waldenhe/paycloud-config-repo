@@ -36,7 +36,7 @@ spring:
                 uac
             uri: lb://paycloud-oauth2-server
             predicates:
-              - Path=/oauth/**,/user
+              - Path=/uac/**
             filters:
               - TokenRelay= 
   autoconfigure:
